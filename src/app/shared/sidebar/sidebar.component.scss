@@ -1,0 +1,22 @@
+.sidebar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 100%;
+
+    .sidebar-inner-container {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        .sidebar-item {
+            font-weight: bold;
+        }
+
+        [class*='sidebar-item']:not(:last-of-type) {
+            margin-bottom: 16px;
+        }
+    }
+}
